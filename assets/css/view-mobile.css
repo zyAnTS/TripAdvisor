@@ -1,0 +1,89 @@
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+  /* HEADER */
+
+  header .container > i {
+    display: inherit;
+  }
+
+  header .container img {
+    width: 132px;
+  }
+
+  header nav > i {
+    display: inherit;
+  }
+
+  nav .header-nav:not(:last-child) {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+  /* MAIN  */
+
+  /* Main menu */
+  .menu {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .menu-nav {
+    width: fit-content;
+  }
+
+  .menu-nav p {
+    width: max-content;
+  }
+
+  /* Main photos */
+  .photos {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+  .photos .colonne-2 {
+    display: none;
+  }
+
+  /* Main breadcrumb */
+
+  .breadcrumb {
+    display: none;
+  }
+
+  /* Main description */
+
+  .description .colonne-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img img {
+    height: 180px;
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+  }
+
+  /* Main carousel */
+
+  .carousel-product {
+    flex-direction: column;
+  }
+
+  /* Main product */
+
+  .carousel-presentation {
+    width: 100%;
+  }
+
+  .product {
+    width: calc((100% - 32px) / 1.5);
+  }
+
+  /* Main edito */
+  .edito {
+    width: calc((100% - 32px) / 1.5);
+  }
+}

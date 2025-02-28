@@ -1,0 +1,267 @@
+/* COMMON RULES */
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  font-family: "TS-Reg", sans-serif;
+  font-size: var(--size-md);
+  line-height: var(--line-md);
+  color: var(--text-primary);
+}
+
+.container {
+  max-width: 1135px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "TS-Med", sans-serif;
+}
+
+h1 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 81px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+i {
+  font-size: 24px;
+}
+
+.button {
+  background-color: var(--button);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-lg);
+  color: #ffffff;
+  font-family: "TS-Med";
+  font-size: var(--size-md);
+  line-height: var(--line-md);
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+a {
+  color: var(--text-primary);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+span {
+  font-weight: 700;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  background-color: var(--background);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+}
+
+header .container > i {
+  display: none;
+}
+
+header .container img {
+  width: 190px;
+}
+
+header .container img:hover {
+  opacity: 0.8;
+}
+
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+header nav > i {
+  display: none;
+}
+
+.header-nav a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+}
+.header-nav {
+  font-weight: 700;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-lg);
+}
+
+.header-nav:hover {
+  background-color: var(--nav-header-hover);
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  background-color: #faf1ed;
+  padding: var(--space-xl) 0;
+  font-size: var(--size-sm);
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000000;
+}
+
+footer a:hover {
+  text-decoration: solid;
+  cursor: pointer;
+}
+
+/* BACK TO HEADER */
+
+.fixed {
+  position: fixed;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+}
+
+.back {
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  background-color: var(--background);
+}
+
+.back:hover {
+  background-color: var(--nav-header-hover);
+}
+
+/* FORMULAIRE */
+
+.modal {
+  position: fixed;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0000007f;
+}
+
+.formulaire {
+  background-color: #ffffff;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  min-width: 280px;
+  max-width: 550px;
+  width: 100%;
+  margin: var(--space-md);
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-family: "TS-Med", sans-serif;
+  font-weight: 400;
+  border-radius: var(--radius-sm);
+  background-color: var(--nav-header-hover);
+  padding: var(--space-sm);
+  border: none;
+}
+
+textarea {
+  font-family: "TS-Med", sans-serif;
+  font-weight: 400;
+  height: 100px;
+  border-radius: var(--radius-sm);
+  background-color: var(--nav-header-hover);
+  padding: var(--space-sm);
+  border: none;
+  resize: none;
+}
+
+#close {
+  padding: var(--space-sm);
+  background-color: var(--background);
+  width: fit-content;
+  border-radius: var(--radius-lg);
+}
+
+#close:hover {
+  background-color: var(--nav-header-hover);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.send {
+  color: var(--brand-primary);
+}

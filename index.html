@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/02a65e34bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <title>TripAdvisor 🌈</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <i class="icon-menu_bars"></i>
+        <a href="">
+          <img src="./assets/img/Tripadvisor_logo.svg" alt="Logo Tripadvisor"
+        /></a>
+        <nav>
+          <i class="icon-search"></i>
+          <div class="header-nav">
+            <a href=""
+              ><i class="icon-pencil"></i>
+              <p>Avis</p></a
+            >
+          </div>
+          <div class="header-nav">
+            <a href=""
+              ><i class="icon-heart"></i>
+              <p>Voyages</p></a
+            >
+          </div>
+          <div class="header-nav">
+            <a href=""
+              ><i class="icon-notification_bell"></i>
+              <p>Alertes</p></a
+            >
+          </div>
+          <button class="button" id="btn-show-form">Connectez-vous</button>
+          <div class="header-nav">
+            <a href=""
+              ><i class="icon-empty_cart"></i>
+              <p>Panier</p></a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="title">
+          <div id="top">
+            <h1><span>Explorez</span> Paris</h1>
+          </div>
+          <p>
+            Les revenus influencent le choix des expériences présentées sur
+            cette page : <a href="">en savoir plus</a>
+          </p>
+        </div>
+        <div class="menu">
+          <div class="menu-nav">
+            <p>Hôtels</p>
+            <i class="icon-hotels"></i>
+          </div>
+          <div class="menu-nav">
+            <p>Locations de vacances</p>
+            <i class="icon-vacation_rentals"></i>
+          </div>
+          <div class="menu-nav">
+            <p>Activités</p>
+            <i class="icon-attractions"></i>
+          </div>
+          <div class="menu-nav">
+            <p>Restaurants</p>
+            <i class="icon-restaurants"></i>
+          </div>
+          <div class="menu-nav">
+            <p>Forums de voyage</p>
+            <i class="icon-forums"></i>
+          </div>
+          <div class="menu-nav">
+            <p>Vols</p>
+            <i class="icon-flights"></i>
+          </div>
+          <div class="menu-nav">
+            <p>Croisières</p>
+            <i class="icon-cruises"></i>
+          </div>
+          <div class="menu-nav">
+            <p>Plus</p>
+            <i class="icon-more_horizontal"></i>
+          </div>
+        </div>
+        <div class="photos">
+          <div class="colonne-1">
+            <img
+              src="./assets/img/media-paysage.png"
+              alt="Vue des quais de Paris"
+            />
+            <button class="button">
+              <i class="icon-photo"></i> Toutes les photos
+            </button>
+          </div>
+          <div class="colonne-2">
+            <img
+              src="./assets/img/media-paysage.png"
+              alt="Deux tourisme en scooter"
+            />
+            <img
+              src="./assets/img/media-paysage.png"
+              alt="Vue de la Libellé du produit"
+            />
+          </div>
+        </div>
+        <div class="breadcrumb">
+          <div class="links">
+            <a href="">Europe</a> > <a href="">France</a> >
+            <a href="">Ile-de-France</a> > <a href="">Paris</a>
+            <i class="icon-caret_down"></i>
+          </div>
+          <div class="city">Visiter : Paris</div>
+        </div>
+        <div class="description">
+          <div class="colonne-1">
+            <h2>La Ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris. La
+              ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+          <div class="colonne-2">
+            <div class="text">
+              <h3>Paris : commencez à organiser !</h3>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button class="button">Créez un voyage</button>
+            </div>
+            <div class="img">
+              <img src="./assets/img/image_trips_card_medium.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="promotion">
+          <h2>Paris : les immanquables</h2>
+          <div class="carousel-product">
+            <div class="carousel-presentation">
+              <h4>Se divertir</h4>
+              <p>
+                Des lieux à voir, des rues à explorer et des expériences
+                emblématiques à Paris.
+              </p>
+              <a href="">Tout afficher</a>
+            </div>
+            <div class="scroll-product">
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-product">
+            <div class="carousel-presentation">
+              <h4>Se restaurer</h4>
+              <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+              <a href="">Tout afficher</a>
+            </div>
+            <div class="scroll-product">
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./assets/img/media-paysage.png"
+                    alt="Alt de l'image"
+                  />
+                  <div class="favorite">
+                    <i class="icon-heart"></i>
+                  </div>
+                  <div class="label">
+                    <i class="icon-travelers_choice_badge"></i>2024
+                  </div>
+                </div>
+                <div class="product-text">
+                  <h5>Libellé du produit</h5>
+                  <div class="rating">
+                    <div class="rating-circles">
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                      <i class="icon-bubble_rating_bg"></i>
+                    </div>
+                    99 999
+                  </div>
+                  Description globale du produit incluant les points forts
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="guide">
+          <h2>Guides de voyageurs</h2>
+          <div class="carousel-edito">
+            <div class="edito">
+              <div class="edito-img">
+                <img
+                  src="./assets/img/media-paysage.png"
+                  alt="Photo d'un atelier chic à Paris"
+                />
+              </div>
+              <div class="edito-text">
+                <h5>Libellé de l'article</h5>
+                99 articles
+                <div class="signature">
+                  <img src="./assets/img/media-carre.png" alt="" />Par
+                  <span>Topito</span>
+                </div>
+              </div>
+            </div>
+            <div class="edito">
+              <div class="edito-img">
+                <img
+                  src="./assets/img/media-paysage.png"
+                  alt="Photo du musée Brandy"
+                />
+              </div>
+              <div class="edito-text">
+                <h5>Libellé de l'article</h5>
+                99 articles
+                <div class="signature">
+                  <img src="./assets/img/media-carre.png" alt="" />Par
+                  <span>Topito</span>
+                </div>
+              </div>
+            </div>
+            <div class="edito">
+              <div class="edito-img">
+                <img
+                  src="./assets/img/media-paysage.png"
+                  alt="Photo des catacombes"
+                />
+              </div>
+              <div class="edito-text">
+                <h5>Libellé de l'article</h5>
+                99 articles
+                <div class="signature">
+                  <img src="./assets/img/media-carre.png" alt="" />Par
+                  <span>Topito</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="fixed">
+      <a href="#top">
+        <div class="back">
+          <i class="icon-caret_up"></i>
+        </div>
+      </a>
+    </div>
+    <footer>
+      <img src="./assets/img/favicon-tripadvisor.svg" alt="" />
+      <div>
+        Made at <a href="">Le Reacteur</a> by
+        <a href="">Yann Treuiller-Schlachter</a>
+      </div>
+    </footer>
+    <div class="modal hide">
+      <div class="formulaire">
+        <form action="">
+          <div class="form-header">
+            <h4 id="form-title">Formulaire de contact</h4>
+            <div id="close"><i class="icon-times"></i></div>
+          </div>
+          <label for="prenom"
+            >Prénom : <input type="text" name="Prenom" id="prenom" required
+          /></label>
+          <label for="nom"
+            >Nom : <input type="text" name="Nom" id="nom" required
+          /></label>
+          <label for="mail"
+            >Email : <input type="emailmail" name="Mail" id="mail" required
+          /></label>
+          <label for="sujet"
+            >Sujet : <input type="text" name="Sujet" id="sujet" required
+          /></label>
+          <label for="message"
+            >Message :
+            <textarea
+              name="Message"
+              id="message"
+              row="15"
+              col="100%"
+              required
+            ></textarea>
+          </label>
+          <button class="button" id="form-button">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+:root {
+  /* Colors */
+  --background: #ffffff;
+  --brand-primary: #34e0a1;
+  --brand-secondary: #ff5d5d;
+  --button: #000000;
+  --button-hover: #333333;
+  --footer-background: #faf1ed;
+  --invert: #ffffff;
+  --nav-header-hover: #ececec;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+
+  /* Space */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 32px;
+
+  /* Font size */
+  --size-xs: 12px;
+  --size-sm: 14px;
+  --size-md: 16px;
+  --size-lg: 18px;
+
+  /* Line height */
+  --line-xs: 18px;
+  --line-sm: 21px;
+  --line-md: 24px;
+  --line-lg: 27px;
+}

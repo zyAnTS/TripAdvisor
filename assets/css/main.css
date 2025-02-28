@@ -1,0 +1,377 @@
+/* MAIN  */
+
+/* Main title */
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding: var(--space-md) var(--space-md) var(--space-xl);
+}
+
+.title span {
+  color: var(--brand-secondary);
+}
+
+.title p {
+  font-size: var(--size-sm);
+  color: var(--text-secondary);
+}
+
+.title a {
+  color: var(--text-secondary);
+}
+
+.title a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Main menu */
+
+.menu {
+  display: flex;
+  gap: var(--space-sm);
+  position: sticky;
+  top: 63px;
+  z-index: 20;
+  width: 100%;
+  background-color: var(--background);
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-sm);
+  border: 1px solid var(--button);
+  border-radius: var(--space-md);
+  padding: var(--space-md);
+  font-weight: 700;
+  width: calc((100% - 40px) / 6);
+}
+
+.menu-nav:hover {
+  color: var(--background);
+  background-color: var(--button);
+  cursor: pointer;
+}
+
+.menu-nav:nth-child(6),
+.menu-nav:nth-child(7) {
+  display: none;
+}
+
+/* Main photos */
+
+.photos {
+  display: flex;
+  gap: var(--space-xs);
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+}
+
+.photos img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.photos img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.photos .colonne-1 {
+  position: relative;
+  flex: 1;
+}
+
+.photos .colonne-1 .button {
+  position: absolute;
+  bottom: var(--space-md);
+  left: var(--space-md);
+  font-size: var(--size-xs);
+}
+
+.photos .colonne-1 .button i {
+  font-size: var(--size-md);
+}
+
+.photos .colonne-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  width: 400px;
+}
+
+.photos .colonne-2 img {
+  height: 50%;
+  flex: 1;
+}
+
+/* Main breadcrumb */
+
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: var(--size-xs);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.links a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: solid;
+  cursor: pointer;
+}
+
+.links i {
+  font-size: var(--size-xs);
+}
+
+/* Main description */
+
+.description {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.description .colonne-1 {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  font-size: var(--size-lg);
+  line-height: var(--line-lg);
+}
+
+.description .colonne-2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  background-color: var(--brand-secondary);
+  padding: var(--space-lg);
+}
+
+.text .button {
+  width: fit-content;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+}
+
+/* Main carousel */
+
+.promotion {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+  height: fit-content;
+}
+
+.carousel-product {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.scroll-product {
+  display: flex;
+  overflow-x: hidden;
+  gap: var(--space-md);
+}
+
+/* Main product */
+
+.carousel-presentation {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 250px;
+}
+
+.product {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  width: 279px;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background-color: var(--background);
+}
+
+.product-img {
+  position: relative;
+  width: 100%;
+  /* aspect-ratio: 4 / 3; */
+  height: 187px;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-img img:hover {
+  opacity: 0.8;
+}
+
+.favorite {
+  position: absolute;
+  z-index: 10;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  height: 32px;
+  width: 32px;
+  border-radius: var(--radius-lg);
+}
+
+.favorite:hover {
+  background-color: var(--nav-header-hover);
+}
+
+.label {
+  position: absolute;
+  z-index: 10;
+  bottom: var(--space-sm);
+  left: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: 45px;
+  color: var(--text-primary);
+  font-size: var(--size-xs);
+  font-weight: 700;
+  background-color: var(--brand-primary);
+  padding: var(--space-xs);
+  border-radius: 16px 16px 4px 4px;
+}
+
+.label i {
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+}
+
+.product-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: var(--size-sm);
+  line-height: var(--line-sm);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  height: 14px;
+  font-size: var(--size-xs);
+  color: var(--text-secondary);
+}
+
+.rating-circles {
+  display: flex;
+}
+.rating-circles i {
+  font-size: var(--size-md);
+  color: var(--brand-primary);
+}
+
+/* Main edito */
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+  height: fit-content;
+}
+
+.carousel-edito {
+  display: flex;
+  overflow-x: hidden;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.edito {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  width: calc((100% - 32px) / 3);
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background-color: var(--background);
+}
+
+.edito-img {
+  position: relative;
+  width: 100%;
+  /* aspect-ratio: 4 / 3; */
+  height: 262px;
+}
+
+.edito-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edito-img img:hover {
+  opacity: 0.8;
+}
+
+.edito-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  font-size: var(--size-sm);
+  line-height: var(--line-sm);
+}
+
+.signature {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-xs);
+}
+
+.signature img {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-lg);
+}
