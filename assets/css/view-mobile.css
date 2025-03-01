@@ -3,20 +3,20 @@
 @media screen and (max-width: 768px) {
   /* HEADER */
 
-  header .container > i {
-    display: inherit;
-  }
-
   header .container img {
     width: 132px;
   }
 
-  header nav > i {
+  header .container > .header-nav {
     display: inherit;
   }
 
   nav .header-nav:not(:last-child) {
     display: none;
+  }
+
+  nav .header-nav:nth-child(2) {
+    display: inherit;
   }
 
   nav button {

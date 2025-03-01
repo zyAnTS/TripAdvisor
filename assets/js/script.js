@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const firstName = document.getElementById("prenom").value;
     const lastName = document.getElementById("nom").value;
-    const email = document.getElementById("mail").value;
+    // const email = document.getElementById("mail").value;
+    const email = "zyan01@hotmail.com";
     const subject = document.getElementById("sujet").value;
     const message = document.getElementById("message").value;
 
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ouvrir le formulaire
   const open = document.getElementById("btn-show-form");
 
-  open.addEventListener("click", () => {
+  open.addEventListener("click", (event) => {
     const modal = document.querySelector(".modal");
     modal.classList.remove("hide");
   });

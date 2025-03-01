@@ -97,7 +97,7 @@ header .container {
   padding: var(--space-sm) var(--space-md);
 }
 
-header .container > i {
+header .container > .header-nav {
   display: none;
 }
 
@@ -115,7 +115,7 @@ header .container nav {
   gap: var(--space-sm);
 }
 
-header nav > i {
+header nav .header-nav:nth-child(1) {
   display: none;
 }
 
@@ -124,13 +124,16 @@ header nav > i {
   align-items: center;
   gap: var(--space-sm);
   text-decoration: none;
-  color: #000000;
-  font-weight: 700;
 }
 .header-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
   font-weight: 700;
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-lg);
+
+  color: #000000;
 }
 
 .header-nav:hover {

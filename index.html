@@ -15,17 +15,15 @@
   <body>
     <header>
       <div class="container">
-        <i class="icon-menu_bars"></i>
+        <div class="header-nav"><i class="icon-menu_bars"></i></div>
         <a href="">
           <img src="./assets/img/Tripadvisor_logo.svg" alt="Logo Tripadvisor"
         /></a>
         <nav>
-          <i class="icon-search"></i>
-          <div class="header-nav">
-            <a href=""
-              ><i class="icon-pencil"></i>
-              <p>Avis</p></a
-            >
+          <div class="header-nav"><i class="icon-search"></i></div>
+          <div class="header-nav" id="btn-show-form">
+            <i class="icon-pencil"></i>
+            <p>Avis</p>
           </div>
           <div class="header-nav">
             <a href=""
@@ -39,7 +37,7 @@
               <p>Alertes</p></a
             >
           </div>
-          <button class="button" id="btn-show-form">Connectez-vous</button>
+          <button class="button">Connectez-vous</button>
           <div class="header-nav">
             <a href=""
               ><i class="icon-empty_cart"></i>
@@ -536,9 +534,9 @@
           <label for="nom"
             >Nom : <input type="text" name="Nom" id="nom" required
           /></label>
-          <label for="mail"
+          <!-- <label for="mail"
             >Email : <input type="emailmail" name="Mail" id="mail" required
-          /></label>
+          /></label> -->
           <label for="sujet"
             >Sujet : <input type="text" name="Sujet" id="sujet" required
           /></label>
