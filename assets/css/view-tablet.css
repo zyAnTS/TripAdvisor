@@ -61,8 +61,8 @@
 
   .scroll-product {
     flex: 3;
-    margin-right: -20px;
     overflow-x: scroll;
+    /* margin-right: -20px; */
   }
 
   /* Main product */

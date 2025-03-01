@@ -15,6 +15,10 @@
     display: none;
   }
 
+  #search {
+    display: inherit;
+  }
+
   nav .header-nav:nth-child(2) {
     display: inherit;
   }
@@ -29,6 +33,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    margin-right: 20px;
   }
 
   .menu-nav {
