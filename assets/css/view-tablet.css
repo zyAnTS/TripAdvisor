@@ -63,6 +63,7 @@
     flex: 3;
     overflow-x: scroll;
     margin-right: -20px;
+    padding-right: var(--space-md);
   }
 
   /* Main product */
@@ -89,6 +90,7 @@
   .carousel-edito {
     overflow-x: scroll;
     padding-left: 20px;
+    padding-right: var(--space-md);
   }
 
   .edito {

@@ -8,6 +8,7 @@ body {
   font-size: var(--size-md);
   line-height: var(--line-md);
   color: var(--text-primary);
+  overflow-x: hidden;
 }
 
 .container {
@@ -246,14 +247,16 @@ textarea {
   resize: none;
 }
 
-#close {
+#close-formulaire,
+#close-confirmation {
   padding: var(--space-sm);
   background-color: var(--background);
   width: fit-content;
   border-radius: var(--radius-lg);
 }
 
-#close:hover {
+#close-formulaire:hover,
+#close-confirmation:hover {
   background-color: var(--nav-header-hover);
 }
 
@@ -261,10 +264,37 @@ textarea {
   display: none;
 }
 
-.show {
-  display: flex;
+/* MODAL CONFIRMATION */
+
+.confirmation-await {
+  display: none;
 }
 
-.send {
-  color: var(--brand-primary);
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-md);
+  background-color: #ffffff;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  width: 250px;
+  margin: var(--space-md);
+}
+
+.confirmation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.confirmation-content > i {
+  color: var(--invert);
+  background-color: var(--brand-primary);
+  font-size: 32px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
 }
