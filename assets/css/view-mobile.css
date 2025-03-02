@@ -77,6 +77,16 @@
 
   /* Main carousel */
 
+  .promotion {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto;
+  }
+
+  .promotion > h2 {
+    padding-left: 20px;
+  }
+
   .carousel-product {
     flex-direction: column;
   }
@@ -84,7 +94,14 @@
   /* Main product */
 
   .carousel-presentation {
-    width: 100%;
+    width: auto;
+    padding-left: 20px;
+  }
+
+  .scroll-product {
+    position: relative;
+    width: auto;
+    padding-left: 20px;
   }
 
   .product {
