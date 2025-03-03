@@ -33,9 +33,9 @@
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    margin-right: -20px;
-    margin-left: -20px;
-    padding-left: 20px;
+    margin-right: -16px;
+    margin-left: -16px;
+    padding-left: var(--space-md);
     width: auto;
     background-color: var(--background);
   }
@@ -50,8 +50,8 @@
 
   /* Main photos */
   .photos {
-    margin-left: -20px;
-    width: calc(100% + 40px);
+    margin-left: -16px;
+    width: calc(100% + 32px);
   }
   .photos .colonne-2 {
     display: none;
@@ -78,13 +78,13 @@
   /* Main carousel */
 
   .promotion {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -16px;
+    margin-right: -16px;
     width: auto;
   }
 
   .promotion > h2 {
-    padding-left: 20px;
+    padding-left: var(--space-md);
   }
 
   .carousel-product {
@@ -95,13 +95,13 @@
 
   .carousel-presentation {
     width: auto;
-    padding-left: 20px;
+    padding-left: var(--space-md);
   }
 
   .scroll-product {
     position: relative;
     width: auto;
-    padding-left: 20px;
+    padding-left: var(--space-md);
   }
 
   .product {
