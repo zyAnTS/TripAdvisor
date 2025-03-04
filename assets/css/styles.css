@@ -85,7 +85,6 @@ span {
 /* HEADER */
 header {
   position: sticky;
-  width: 100%;
   top: 0;
   z-index: 20;
   background-color: var(--background);
@@ -207,7 +206,6 @@ footer a:hover {
   border-radius: var(--radius-md);
   min-width: 280px;
   max-width: 550px;
-  width: 100%;
   margin: var(--space-md);
 }
 
