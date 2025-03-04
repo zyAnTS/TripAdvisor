@@ -101,6 +101,7 @@
   .scroll-product {
     position: relative;
     width: auto;
+    margin-right: 0px;
     padding-left: var(--space-md);
   }
 
